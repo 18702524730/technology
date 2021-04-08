@@ -1,0 +1,350 @@
+/** h5通用样式---start **/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #414a60;
+}
+
+a:hover, a:active, a:visited, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+body, button, input, option, select, td, textarea {
+  font-family: arial, verdana, helvetica, 'PingFang SC', 'HanHei SC', STHeitiSC-Light, Microsoft Yahei, sans-serif;
+  color: #414a60;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  color: inherit;
+}
+
+a, b, body, button, dd, div, dl, em, footer, form, h1, h2, h3, h4, h5, h6, i, input, label, li, nav, p, select, span, td, textarea, u, ul {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input, textarea {
+  outline: none !important;
+  resize: none;
+}
+
+button, input[type=button], input[type=number], input[type=search], input[type=submit], input[type=tel], input[type=text], textarea {
+  -webkit-appearance: none;
+}
+
+li, ol, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+dt, label {
+  font-weight: normal;
+}
+
+img {
+  vertical-align: middle;
+  /*max-width: 100%;*/
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: 0 !important;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: .65;
+}
+
+.btn-primary {
+  min-width: 80px;
+  color: #fff;
+  background-color: #2bb3ee;
+  border: 1px solid #2bb3ee;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:hover:active, .btn-primary:focus:active {
+  color: #fff;
+  background-color: #279bee !important;
+  border: 1px solid #279bee !important;
+}
+
+.btn-primary.disabled, .btn-primary[disabled] {
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+
+.btn-primary.disabled:hover, .btn-primary[disabled]:hover {
+  background-color: #2bb3ee !important;
+  border: 1px solid #2bb3ee !important;
+}
+
+/*选择字的时候背景色*/
+::selection {
+  background: #2bb3ee;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: #2bb3ee;
+  color: #ffffff;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1;
+}
+
+/*圆圈加载动画*/
+[data-loader=circle] {
+  width: 25px;
+  height: 25px;
+  -webkit-animation: circle infinite .75s linear;
+  -moz-animation: circle infinite .75s linear;
+  -o-animation: circle infinite .75s linear;
+  animation: circle infinite .75s linear;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  border-radius: 100%;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes circle {
+  0% {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes circle {
+  0% {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  0% {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.loading-animate {
+  margin: 0 auto;
+  border-color: #1a98fc !important;
+  border-top-color: transparent !important;
+}
+
+.loading-tip {
+  text-align: center;
+  margin-top: 10px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.center-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.center-cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.text-ellipsis{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#loading, #error_msg, #content_detail {
+  display: none;
+}
+
+#error_msg {
+  font-size: 16px;
+}
+
+#content_detail {
+  height: 100%;
+}
+/** h5通用样式---end **/
+
+
+/** 页面专属 **/
+.bigData-wp{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #f0f3f4;
+}
+.bd-chart{
+  position: relative;
+  background: #fff!important;
+  /*border: 1px solid #ccc;*/
+  /*padding: 10px;*/
+  width: 100%;
+  /*height: 500px;*/
+  height: 100%;
+}
+.bd-chart-title{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/*.bigData-wp .row{*/
+/*margin-top:10px;*/
+/*margin-bottom: 10px;*/
+/*}*/
+.bigData-wp .row .col-xs-12{
+  margin-top: 20px;
+  /*margin-bottom: 10px;*/
+}
+.bigData-wp .m_container{
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+.bd-filter {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+}
+
+.bd-filter__select{
+  cursor: pointer;
+  font-size: 28px;
+  border: 1px solid #D6D6D6 !important;
+  height: 56px;
+  background-color: #ffffff !important;
+  border-radius: 0;
+  box-shadow: none;
+  line-height: 34px;
+  width: 192px;
+}

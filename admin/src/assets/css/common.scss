@@ -1,0 +1,236 @@
+/*-- 公用样式  --*/
+.fll, .fl{
+	float: left;
+}
+.flr, .fr{
+	float: right;
+}
+.clearfix:after{
+	display:block;
+	content:'';
+	clear:both;
+}
+.lc{text-align: center;}
+.ll{text-align: left;}
+.lr{text-align: right;}
+.ml-5,.ml5{margin-left: 5px;}
+.ml-10,.ml10{margin-left: 10px;}
+.ml-15,.ml15{margin-left: 15px;}
+.ml-20,.ml20{margin-left: 20px;}
+.ml-25,.ml25{margin-left: 25px;}
+.ml-30,.ml30{margin-left: 30px;}
+.ml-35,.ml35{margin-left: 35px;}
+.ml-40,.ml40{margin-left: 40px;}
+.ml-50,.ml50{margin-left: 50px;}
+
+.mt-5,.mt5{margin-top: 5px;}
+.mt-10,.mt10{margin-top: 10px;}
+.mt-15,.mt15{margin-top: 15px;}
+.mt-20,.mt20{margin-top: 20px;}
+.mt-25,.mt25{margin-top: 25px;}
+.mt-30,.mt30{margin-top: 30px;}
+.mt-35,.mt35{margin-top: 35px;}
+.mt-40,.mt40{margin-top: 40px;}
+.mt-50,.mt50{margin-top: 50px;}
+
+.mr-5,.mr5{margin-right: 5px;}
+.mr-10,.mr10{margin-right: 10px;}
+.mr-15,.mr15{margin-right: 15px;}
+.mr-20,.mr20{margin-right: 20px;}
+.mr-25,.mr25{margin-right: 25px;}
+.mr-30,.mr30{margin-right: 30px;}
+.mr-35,.mr35{margin-right: 35px;}
+.mr-40,.mr40{margin-right: 40px;}
+.mr-50,.mr50{margin-right: 50px;}
+
+.mb-5,.mb5{margin-bottom: 5px;}
+.mb-10,.mb10{margin-bottom: 10px;}
+.mb-15,.mb15{margin-bottom: 15px;}
+.mb-20,.mb20{margin-bottom: 20px;}
+.mb-25,.mb25{margin-bottom: 25px;}
+.mb-30,.mb30{margin-bottom: 30px;}
+.mb-35,.mb35{margin-bottom: 35px;}
+.mb-40,.mb40{margin-bottom: 40px;}
+.mb-50,.mb50{margin-bottom: 50px;}
+
+.hidden{display: none;}
+.commWidth{width: 1280px;margin-left: auto;margin-right: auto;position: relative;}
+body{background-color: #f8f8f8;min-width: 1280px;}
+p {margin: 0;}
+
+
+/*输入框公共样式*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	color:    #7F8FA4;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+	color:    #7F8FA4;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+	color:    #7F8FA4;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+	color:    #7F8FA4;
+}
+
+// 过渡效果，更多的直接引用element-ui中的，若没有，在这儿添加
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active 在低于版本 2.1.8 中 */ {
+  opacity: 0;
+}
+
+.highcharts-credits{display:none;}
+
+// 列表页样式
+.ant-table-thead > tr.ant-table-row-hover > td, .ant-table-tbody > tr.ant-table-row-hover > td, .ant-table-thead > tr:hover > td, .ant-table-tbody > tr:hover > td{background: #f1f6ff;}
+.ant-table-tbody > tr > td,.ant-table-thead > tr > th{border-bottom: 1px solid #f1f1f1;}
+.ant-input{height: 30px;line-height: 20px;font-size: 13px;border: 1px solid #F1F1F1;border-radius: 2px;}
+.ant-select{height: 30px;line-height: 20px;font-size: 13px;}
+.ant-select-selection--single{height: 30px;border-color: #F1F1F1;border-radius: 2px;}
+.ant-select-selection__rendered{line-height: 28px;}
+.ant-btn{border-radius: 2px; height: 30px;}
+.ant-btn-primary{
+    color: #fff;
+    background-color: #3576FF;
+    border-color: #3576FF;
+}
+.ant-btn-default{
+	border-color: #3576FF;
+	color: #3576FF;
+}
+a{color: #3576FF;}
+.ant-pagination-prev, .ant-pagination-next, .ant-pagination-jump-prev, .ant-pagination-jump-next{border-radius: 2px;}
+.ant-pagination-item, .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link{border-radius: 2px;}
+.detail-list-wrap {
+	width: 100%;padding: 20px;background-color: #fff;color: #333;
+	.back{
+		vertical-align: middle;margin-bottom: 20px;
+		i{font-size: 24px;color:#bbb;vertical-align: middle;cursor: pointer;}
+		span{padding-left: 5px;font-size:14px;vertical-align: middle;cursor: pointer;}
+	}
+	>.title{font-size:18px;line-height: 25px;height: 25px;font-weight: 600;margin-top: 20px;}
+	.mt10{margin-top: 10px;}
+	.mr10{margin-right: 10px;}
+	.ml10{margin-left: 10px;}
+
+	// 单行单列
+	.list-card{
+		font-size: 12px;border: 1px solid #F1F1F1;margin-bottom: 10px;
+		h4{
+			position: relative;height:38px;line-height: 38px;padding-left: 20px;background-color: #F1F1F1;font-size: 13px;color: #333;margin-bottom: 0;
+			span{position: absolute;top: 0;right: 20px;cursor: pointer;color: #3576FF;}
+		}
+		.items-wrap{
+			padding:20px 20px;
+			.items{
+				.item{
+					line-height: 17px;vertical-align: middle;padding-right: 20px;margin-bottom: 10px;
+					label{color: #999;vertical-align: middle;}
+					span{vertical-align: middle;}
+					a{color: #3576FF;margin-left: 10px;}
+				}
+			}
+			.items:last-child{margin-bottom: 0;}
+			.singTitle{
+				.title{color: #999;}
+			}
+		}
+		.half-wrap {
+			width: 49%; padding: 20px 0 20px 20px; float: left;border:1px solid #f1f1f1;
+			table{
+				th{font-size: 12px;color: #999;font-weight: normal;}
+				td{padding:12px 0 0;}
+			}
+			.list-box {
+				width: 100%; height: 190px; overflow-y: auto;
+				&::-webkit-scrollbar {
+					width: 4px;
+				}
+				&::-webkit-scrollbar-track {
+					background-color: #f5f5f5;
+				} /* 滚动条的滑轨背景颜色 */
+				&::-webkit-scrollbar-thumb {
+					background-color: #ddd; 
+				} /* 滑块颜色 */
+				&::-webkit-scrollbar-button {
+					display:none
+				} /* 滑轨两头的监听按钮颜色 */
+				&::-webkit-scrollbar-corner {
+					display:none
+				} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+			}
+		}
+		.half-rig {float: right}
+		.empty-box {
+			text-align: center; padding: 15px 0 0;
+			img {width: 140px; height: 140px;}
+			.text {color: #999; font-size: 12px; margin-top: 10px;}
+		}
+		.chart{
+			padding: 20px;width: 1000px;
+			.chart-in{width: 600px;}
+		}
+		// 调研入库
+		&.research{
+			.list_title{
+				height: 18px;line-height: 18px;font-size: 13px;font-weight: 600;
+			}
+			.list{
+				position: relative;min-height: 40px;line-height: 40px;background-color: #F5F5F5;border-radius:3px;margin-top: 10px;padding-left: 10px;border:1px solid #F5F5F5;
+				>span{
+					margin-right:43px;font-size: 12px;display: inline-block;
+					&.switch{position: absolute;top: 0;right: 20px;cursor: pointer;margin-right: 0;color: #999;}
+				}
+				&:hover{
+					border:1px solid #3984FF;
+					>span{
+						&.switch{color: #3576FF;}
+					}
+				}
+			}
+			.list_hight{
+				background-color: #F5F8FF; border:1px solid #F5F8FF;
+				>span{
+					color: #3576FF;
+					&.switch{color: #3576FF;}
+				}
+			}
+			.list_con{
+				.list_title{font-size: 12px;font-weight: normal;margin-top: 10px;clear: none;color: #000;}
+				.list_con_wrap{
+					border:1px solid #f1f1f1;padding: 20px 20px 10px;font-size: 12px;
+					.list_con_title{
+						margin-top: 10px;
+						&:first-child{margin-top: 0;};
+					}
+					.items{
+						padding-top: 12px;
+						.item{display: inline-block;width: 325px;}
+					}
+				}
+			}
+		}
+		// 认定资质
+		&.qualification{
+			table{
+				th{width: 50%;font-size: 12px;color: #999;font-weight: normal;}
+				td{padding:12px 0 0;}
+			}
+		}
+	}
+	.list-card:last-child{margin-bottom: 0;}
+
+	// 单行多列
+	.multi-colums{
+		.items-wrap{
+			.items{
+				margin-bottom: 10px;
+				.item{float: left;width: 33%;margin-bottom: 0;}
+			}
+		}
+	}
+}
+
+
